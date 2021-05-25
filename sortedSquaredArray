@@ -1,0 +1,11 @@
+const sortedSquaredArray = (arr) => {
+    if(arr.length > 0){
+        let sqArr = arr.map(val => val*val);
+        let sortArr = sqArr.sort((a,b) => a-b)
+        return sortArr
+    }
+    return arr
+}
+
+sortedSquaredArray([-5,-3,1,8,9])
+// o/p : [1, 9, 25, 64, 81]
