@@ -1,0 +1,21 @@
+In array take alternative numbers and reverse them. Put it again in the place of array again
+arr = [1,2,3,4,5,6,7,8]
+newarr = [1,8,3,6,5,4,7,2]
+
+
+function altReverse(arr) {
+    let newarr =[]
+    if(arr.length > 0) {
+        for(let i=0; i<arr.length; i++){
+            if(i%2 === 0){
+                newarr.push(arr[i])
+            } else {
+                newarr.push(arr[arr.length-i])
+            }
+        }
+        return newarr
+    }
+    retrun arr;
+}
+
+altReverse([1,2,3,4,5,6,7,8])
