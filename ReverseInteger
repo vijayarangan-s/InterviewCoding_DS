@@ -1,0 +1,6 @@
+var reverse = function(x) {
+    var k = x.toString().split('').reverse().join('')
+    return parseInt(k)* Math.sign(x)
+};
+
+reverse(-1234)
