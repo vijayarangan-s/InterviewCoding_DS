@@ -1,0 +1,17 @@
+function secondLargestNumber(ar){
+    if(ar.length > 0) {
+        for(let i=0; i< ar.length; i++){
+            for(let j=0 ; j< ar.length; j++){
+                let tmp;
+                if(ar[j] > ar[j+1]){
+                    tmp = ar[j];
+                    ar[j] = ar[j+1];
+                    ar[j+1] = tmp;
+                }
+            }
+        }
+        retrun ar[ar.length - 2]
+    }
+}
+
+secondLargestNumber([10,20,85,70,96,50,40])
