@@ -1,0 +1,7 @@
+var isPalindrome = function(x) {
+    let k = x.toString().split('').reverse().join('')
+    return x.toString() === k
+};
+
+isPalindrome(121) //true
+isPalindrome(-121)//false
