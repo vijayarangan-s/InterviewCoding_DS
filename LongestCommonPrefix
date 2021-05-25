@@ -1,0 +1,12 @@
+var longestCommonPrefix = function(strs) {
+    let shortStr = strs.sort((a,b) => a.length - b.length)[0];
+
+    while(!strs.every((string) => string.startsWith(shortStr))){
+        console.log("vj",shortStr)
+        if(shortStr.length === 0) return 
+        shortStr = shortStr.slice(0,-1)        
+    }
+    return shortStr
+};
+
+longestCommonPrefix(["monoploy","monononon","monoploy"])
